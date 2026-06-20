@@ -1,12 +1,12 @@
 # Homebrew Tap
 
-This repository contains Homebrew formulae for ghdwlsgur projects.
+This repository contains the Homebrew formula for vctl.
 
 ## vctl
 
 Install vctl with:
 
 ```sh
-brew tap ghdwlsgur/tap
+brew tap ghdwlsgur/vctl
 brew install vctl
 ```
