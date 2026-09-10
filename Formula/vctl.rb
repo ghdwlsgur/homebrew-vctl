@@ -5,20 +5,20 @@
 class Vctl < Formula
   desc "Vault-backed infrastructure access CLI"
   homepage "https://github.com/ghdwlsgur/vctl"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.5.0/vctl_0.5.0_darwin_amd64.tar.gz"
-      sha256 "db5db3c3b67c29dd9ad0091716de60fcadcf2275f936012294e45a2d992463c4"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.6.0/vctl_0.6.0_darwin_amd64.tar.gz"
+      sha256 "114b79acdbd3444dc9208db9cb9ef16ba0482aab915d12824a54f30d52e6764c"
 
       define_method(:install) do
         bin.install "vctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.5.0/vctl_0.5.0_darwin_arm64.tar.gz"
-      sha256 "53f58da2b9b8227f582639057a901fee0163f64874d302c8921cb7bd28e8b879"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.6.0/vctl_0.6.0_darwin_arm64.tar.gz"
+      sha256 "e806f4b2a0a1918074d7c55a9df49aaab1141e2ea43286d3a98059a406383cd3"
 
       define_method(:install) do
         bin.install "vctl"
@@ -28,15 +28,15 @@ class Vctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.5.0/vctl_0.5.0_linux_amd64.tar.gz"
-      sha256 "3feb0d292c83258212cb6dedac4eefd143b2cc07d0f5b0047e8633a303768b6e"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.6.0/vctl_0.6.0_linux_amd64.tar.gz"
+      sha256 "9d54318d934c3ad933cfbca317e0e4dc4d6da4c4871af81b0413f0d61ad3e0bb"
       define_method(:install) do
         bin.install "vctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.5.0/vctl_0.5.0_linux_arm64.tar.gz"
-      sha256 "5ae48cd12b0b0c477523285abe6cef0fd28033bcc3a77f0582fe79a204684973"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.6.0/vctl_0.6.0_linux_arm64.tar.gz"
+      sha256 "e203926ae40d6ebf2043d136c848bbe75a95d9eb456be223fd27275afd9ed192"
       define_method(:install) do
         bin.install "vctl"
       end
