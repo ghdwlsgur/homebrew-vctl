@@ -6,20 +6,20 @@ require_relative "../lib/private_strategy"
 class Vctl < Formula
   desc "Vault-backed infrastructure access CLI"
   homepage "https://github.com/ghdwlsgur/vctl"
-  version "0.25.0"
+  version "0.26.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.25.0/vctl_0.25.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "4c9177598714d8bf6172026987d00eb475dcda7635a073b14cfe34194edd0a7f"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.26.0/vctl_0.26.0_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "dfd69c5d5bda598357bc8609551e11d42844a2652c5fe848d7222d5a341915eb"
 
       define_method(:install) do
         bin.install "vctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.25.0/vctl_0.25.0_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "05884067593af9beb566eab890895b58fe7e07ab86b79c72f87f8843a2624d1a"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.26.0/vctl_0.26.0_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "5c28daa166ba3e583a12219f8e573c0c214023275c6ebb550a22c93f28dc36e7"
 
       define_method(:install) do
         bin.install "vctl"
@@ -29,15 +29,15 @@ class Vctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.25.0/vctl_0.25.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "054c2d2c22f9639d67a7faff34e54217a14d23b96dea393dfb59557eea08bc77"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.26.0/vctl_0.26.0_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "8a811b6d55ed32cd4f5877516ec416fb3e43a694d76d68e1069322224265d77e"
       define_method(:install) do
         bin.install "vctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.25.0/vctl_0.25.0_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "94ba948274b1e763895e8e32e077342b4ba30e4392e4224eb4594b2138a72976"
+      url "https://github.com/ghdwlsgur/vctl/releases/download/v0.26.0/vctl_0.26.0_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "e67097c173613473e1387e921ac86370cd67be9db879ff46db416cbead33dc26"
       define_method(:install) do
         bin.install "vctl"
       end
